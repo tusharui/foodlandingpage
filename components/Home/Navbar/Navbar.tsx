@@ -5,8 +5,10 @@ import { MdDeliveryDining } from 'react-icons/md';
 import Link from "next/link";
 import { HiBars3BottomRight } from 'react-icons/hi2';
 
-
-const Navbar = () => {
+type Props ={
+    openNav :()=> void ;
+}
+const Navbar = ({openNav}:Props ) => {
     const [navBg, setNavBg] = useState(false);
 
     useEffect(()=>{
@@ -51,7 +53,7 @@ const Navbar = () => {
                     </button>
                     {/* toggle button  */}
                     {/* menu icons  */}
-                    <HiBars3BottomRight className="w-8 h-8 cursor-pointer text-blue-950 lg:hidden  "/>
+                    <HiBars3BottomRight onClick={openNav}className="w-8 h-8 cursor-pointer text-blue-950 lg:hidden  "/>
 
 
 

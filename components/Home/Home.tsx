@@ -5,16 +5,21 @@ import Category from './Category/Category'
 import Howitwork from './Howitwork/Howitwork'
 import About from './About/About'
 import Features from './Features/Features'
+import CilentReview from './CilentReview/CilentReview'
+import Footer from './Footer/footer'
+
 
 const Home = () => {
   return (
-    <div className="overflow-hidden h-[20000px]">
+    <div className="overflow-hidden ">
       <Hero/>
       <Restaurant/>
       <Category/>
       <Howitwork/>
       <About/>
       <Features/>
+      <CilentReview/>
+      <Footer/>
     </div>
   )
 }
